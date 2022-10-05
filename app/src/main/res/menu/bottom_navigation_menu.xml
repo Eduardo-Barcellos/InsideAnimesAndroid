@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/icons8_home__1_"
+        android:title="Home"/>
+    <item
+        android:id="@+id/search"
+        android:enabled="true"
+        android:icon="@drawable/icons8_search"
+        android:title="Search"/>
+    <item
+        android:id="@+id/catalogo"
+        android:enabled="true"
+        android:icon="@drawable/spiral_svgrepo_com"
+        android:title="Catalogo"/>
+    <item
+        android:id="@+id/perfil"
+        android:enabled="true"
+        android:icon="@drawable/fotoperfil"
+        android:scaleType="center"
+        android:title="Perfil"/>
+</menu>

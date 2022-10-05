@@ -1,0 +1,323 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/texttemporada"
+            android:text="Melhores Animes da Temporada"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"/>
+
+        <ImageView
+            android:id="@+id/anime1"
+            style="@style/border_radius"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/spyxfamilly"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texttemporada" />
+
+        <TextView
+            android:id="@+id/tituloanime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spy x Familly"
+            android:layout_marginTop="35dp"
+            app:layout_constraintTop_toBottomOf="@id/texttemporada"
+            app:layout_constraintLeft_toRightOf="@id/anime1"/>
+
+        <TextView
+            android:id="@+id/sinopse1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Baseado na obra de Tatsuya Endo, Spy x Family segue a família formada pela garotinha telepata Anya, seu pai adotivo e espião profissional Twilight (que se apresenta como Loid Forger) e a mãe adotiva e assassina Yor. Sem perceber, as duas se entrelaçam na missão de Loid de impedir uma guerra."
+            android:textSize="11sp"
+            app:layout_constraintLeft_toRightOf="@id/anime1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tituloanime1" />
+
+        <ImageView
+            android:id="@+id/anime2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/lycorisrecoil"
+            app:layout_constraintTop_toBottomOf="@id/anime1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:id="@+id/tituloanime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lycoris Recoil"
+            app:layout_constraintTop_toBottomOf="@id/anime1"
+            app:layout_constraintLeft_toRightOf="@id/anime2"
+            android:layout_marginTop="35dp"
+            />
+
+        <TextView
+            android:id="@+id/sinopse2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="10.4sp"
+            android:text="Se há paz no mundo, é graças à Lycoris, uma organização secreta de combate ao crime composta apenas por garotas. Suas agentes mais poderosas são a despreocupada Chisato e a talentosa e misteriosa Takina. Juntas, elas trabalham em um café, servindo bebidas e doces, cuidando de bebês, fazendo compras e ensinando japonês."
+            app:layout_constraintLeft_toRightOf="@id/anime2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tituloanime2" />
+
+        <ImageView
+            android:id="@+id/anime3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/chainsawman"
+            app:layout_constraintTop_toBottomOf="@id/anime2"
+            android:layout_marginTop="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tituloanime3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chainsaw Man"
+            app:layout_constraintTop_toBottomOf="@id/anime2"
+            android:layout_marginTop="35dp"
+            app:layout_constraintLeft_toRightOf="@id/anime3"
+            />
+
+        <TextView
+            android:id="@+id/sinopse3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Chainsaw Man acompanha a história do jovem Denji, que ficou endividado após a morte do pai. Por um acaso do destino, o protagonista salva um cão-Demônio chamado Pochita, ele passa a receber dinheiro para matar demônios para a Yakuza."
+            android:textSize="11sp"
+            app:layout_constraintLeft_toRightOf="@id/anime3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tituloanime3" />
+
+        <TextView
+            android:id="@+id/destaques"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destaques"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/anime3"
+            android:layout_marginTop="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="130dp"
+            android:layout_height="215dp"
+            app:layout_constraintTop_toBottomOf="@id/destaques"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="50dp"
+            android:background="@color/categorias"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/categoria1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:text="Melhores Hárem"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/anime1categoria1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/categoria1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/schooldays"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/categoria1" />
+
+            <TextView
+                android:id="@+id/titulocatanime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/categoria1"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/anime1categoria1"
+                android:text="School Days"
+                android:textSize="8sp" />
+
+            <ImageView
+                android:id="@+id/catanime2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/anime1categoria1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/dxd" />
+
+            <TextView
+                android:id="@+id/titulocatanime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titulocatanime1"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="49dp"
+                android:layout_toEndOf="@+id/catanime2"
+                android:text="High School DXD"
+                android:textSize="8sp" />
+
+            <ImageView
+                android:id="@+id/catanime3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/catanime2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/shinmaimaounotestament" />
+
+            <TextView
+                android:id="@+id/titulocatanime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titulocatanime2"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="49dp"
+                android:layout_toEndOf="@+id/catanime3"
+                android:text="Shinmai Maou no Testament"
+                android:textSize="8sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="215dp"
+            app:layout_constraintTop_toBottomOf="@id/destaques"
+            android:layout_marginTop="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="50dp"
+            android:background="@color/categorias"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/categoria2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:text="Melhores Yuri"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/cat2anime1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/categoria2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/bloomintoyou"/>
+
+            <TextView
+                android:id="@+id/cat2titulo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/categoria2"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@id/cat2anime1"
+                android:text="Bloom Into You"
+                android:textSize="8sp" />
+
+            <ImageView
+                android:id="@+id/cat2anime2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/cat2anime1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/adachitoshimamura" />
+
+            <TextView
+                android:id="@+id/cat2titulo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cat2titulo1"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="48dp"
+                android:layout_toEndOf="@+id/cat2anime2"
+                android:text="Adachi to Shimamura"
+                android:textSize="8sp" />
+
+            <ImageView
+                android:id="@+id/cat2anime3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/cat2anime2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/sweetblueflowers" />
+
+            <TextView
+                android:id="@+id/cat2titulo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cat2titulo2"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="49dp"
+                android:layout_toEndOf="@+id/cat2anime3"
+                android:text="Sweet Blue Flowers"
+                android:textSize="8sp" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/contraste"
+            style="@style/Widget.App.BottomNavigationView"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/container"
+            app:menu="@menu/bottom_navigation_menu"
+            tools:layout_editor_absoluteX="16dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
